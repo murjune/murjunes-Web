@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Font Practice</title>
+    <style>
+      html {
+        font-size: 32px;
+      }
+      .font-default {
+        font-size: 16px;
+        text-align: center;
+      }
+      .font-percentage {
+        font-size: 150%;
+      }
+      .font-em {
+        font-size: 1.5em;
+      }
+      .font-rem {
+        font-size: 1.5rem;
+      }
+      .font-inherit {
+        font-size: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="font-default">
+      <!-- 1. font-default와 동일 -->
+      <p>this is me</p>
+      <!-- 2. 위와 동일 이건 생략해도 됨 -->
+      <p class="font-default">this is me</p>
+      <!-- 3. font-default의 크기 150% -->
+      <p class="font-percentage">this is me</p>
+      <!-- 4. font-default의 크기 150% == 1.5em -->
+      <p class="font-em">this is me</p>
+      <!-- 5. 최상위 html의 크기 150% == 1.5rem -->
+      <p class="font-rem">this is me</p>
+      <!-- 6. font-default와 동일: 상속받았으니까.. -->
+      <p class="font-inherit">this is me</p>
+    </div>
+  </body>
+</html>
